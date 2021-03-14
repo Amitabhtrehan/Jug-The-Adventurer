@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title> The Jugnoo Fan Club!</title>
+<!-- 
+    <script>
+     function validateForm() {
+      var x = document.forms["InputForm"]["newthing"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+      else{
+        alert(x);
+      }
+    } 
+    </script>
+ -->
+</head>
+
+<body>
+  
+  <h1>All About <it> Jugnoo </it> aka <it>Jug The Terrier</it></h1>
+  <img style="max-width: 450px; max-height: 300px" src='./images/JugnooTheMonk.JPG' alt='Jugnoo the meditating dog'/>
+
+    <h2>Things about Jugnoo</h2>
+
+    <ul id='things'></ul>
+
+    <form action='/thing/add' onsubmit="return validateForm()" method='post'>
+    <!-- <form name="InputForm"  onsubmit="return validateForm()" method='post'> -->
+      <!-- <form name="InputForm" action='/thing/add' onsubmit="return validateForm()" method='post'> -->
+     <!-- <input type='text'> -->
+    <input name='newthing' type='text'>
+    <input type='submit' value='submit'>
+    </form>
+  
+    <ul id='toys'></ul>
+
+    <script src='index.js'></script>
+
+</body>
+
+</html>
+
+
+   
